@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/alx/CLionProjects/untitled/cmake-build-debug"
+			"value" : "/Users/alx/Documents/GitHub/SmartPointer-Final/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -479,7 +479,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/alx/CLionProjects/untitled/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/Users/alx/Documents/GitHub/SmartPointer-Final/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -539,7 +539,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/alx/CLionProjects/untitled"
+			"value" : "/Users/alx/Documents/GitHub/SmartPointer-Final"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -819,7 +819,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "untitled"
+			"value" : "SmartPointer"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1118,6 +1118,42 @@
 			"value" : "FALSE"
 		},
 		{
+			"name" : "SmartPointer_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/alx/Documents/GitHub/SmartPointer-Final/cmake-build-debug"
+		},
+		{
+			"name" : "SmartPointer_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "SmartPointer_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/alx/Documents/GitHub/SmartPointer-Final"
+		},
+		{
 			"name" : "untitled_BINARY_DIR",
 			"properties" : 
 			[
@@ -1127,7 +1163,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/alx/CLionProjects/untitled/cmake-build-debug"
+			"value" : "/Users/alx/Documents/GitHub/SmartPointer-Final/cmake-build-debug"
 		},
 		{
 			"name" : "untitled_IS_TOP_LEVEL",
@@ -1151,7 +1187,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/alx/CLionProjects/untitled"
+			"value" : "/Users/alx/Documents/GitHub/SmartPointer-Final"
 		}
 	],
 	"kind" : "cache",

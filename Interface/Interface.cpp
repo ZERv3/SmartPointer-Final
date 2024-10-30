@@ -26,7 +26,7 @@ void testLoadAskStep() {
     std::cout << "\tСколько шагов нужно сделать?: ";
 }
 void testLoadAskOutput() {
-    std::cout << "\tНапишите название файла с расширением: ";
+    std::cout << "\tНапишите название файла: ";
 }
 
 int getValidatedInput(int min, int max) {

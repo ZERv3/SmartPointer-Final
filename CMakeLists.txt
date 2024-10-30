@@ -1,14 +1,14 @@
 cmake_minimum_required(VERSION 3.29)
-project(untitled)
+project(SmartPointer)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(untitled main.cpp
-        Tests/testLoad.cpp
-        Tests/tests.h
+add_executable(SmartPointerExperiment
         SmartPointer/SmartPointer.h
-        Interface/Interface.cpp
+        Tests/Tests.h
+        Tests/TestLoad.cpp
+        Tests/TestView.cpp
+        Tests/TestFunc.cpp
         Interface/Interface.h
-        Tests/testView.cpp
-        Tests/testFunc.cpp
-        Sequences/LinkedList.h)
+        Interface/Interface.cpp
+        main.cpp)

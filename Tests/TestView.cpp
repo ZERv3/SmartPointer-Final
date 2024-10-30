@@ -84,7 +84,7 @@ void testLoadConsoleView(int start, int end, int steps) {
 
 void testLoadFileView(int start, int end, int steps, const std::string& outputPath) {
     // Открываем файл для записи
-    std::ofstream outFile("../"+outputPath);
+    std::ofstream outFile("../Output/"+outputPath+".dat");
     if (!outFile) {
         std::cerr << "Ошибка открытия файла: " << outputPath << std::endl;
         return;
