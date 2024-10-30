@@ -40,9 +40,9 @@ void testLoadConsoleView(int start, int end, int steps) {
         double smrtPtrMoveTime = testSmrtPtrMovePerformance(numTests);
 
         // Получаем времена выполнения для std::shared_ptr
-        double sharedPtrCreationTime = testSharedPtrCreationPerformance(numTests);
-        double sharedPtrCopyTime = testSharedPtrCopyPerformance(numTests);
-        double sharedPtrMoveTime = testSharedPtrMovePerformance(numTests);
+        double sharedPtrCreationTime = testStdSharedPtrCreationPerformance(numTests);
+        double sharedPtrCopyTime = testStdSharedPtrCopyPerformance(numTests);
+        double sharedPtrMoveTime = testStdSharedPtrMovePerformance(numTests);
 
         // Вычисляем процентное соотношение
         double creationRatio = (smrtPtrCreationTime / sharedPtrCreationTime) * 100;
@@ -105,9 +105,9 @@ void testLoadFileView(int start, int end, int steps, const std::string& outputPa
         double smrtPtrMoveTime = testSmrtPtrMovePerformance(numTests);
 
         // Получаем времена выполнения для std::shared_ptr
-        double sharedPtrCreationTime = testSharedPtrCreationPerformance(numTests);
-        double sharedPtrCopyTime = testSharedPtrCopyPerformance(numTests);
-        double sharedPtrMoveTime = testSharedPtrMovePerformance(numTests);
+        double sharedPtrCreationTime = testStdSharedPtrCreationPerformance(numTests);
+        double sharedPtrCopyTime = testStdSharedPtrCopyPerformance(numTests);
+        double sharedPtrMoveTime = testStdSharedPtrMovePerformance(numTests);
 
         // Вычисляем процентное соотношение
         double creationRatio = (smrtPtrCreationTime / sharedPtrCreationTime) * 100;

@@ -17,13 +17,13 @@ struct TestStruct {
 
 //Нагрузочные тесты
 double testSmrtPtrCreationPerformance(int numTests);
-double testSharedPtrCreationPerformance(int numTests);
+double testStdSharedPtrCreationPerformance(int numTests);
 
 double testSmrtPtrCopyPerformance(int numTests);
-double testSharedPtrCopyPerformance(int numTests);
+double testStdSharedPtrCopyPerformance(int numTests);
 
 double testSmrtPtrMovePerformance(int numTests);
-double testSharedPtrMovePerformance(int numTests);
+double testStdSharedPtrMovePerformance(int numTests);
 
 //Функциональные тесты
 void testSmrtPtrCreationAndDestruction();

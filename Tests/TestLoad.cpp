@@ -1,7 +1,4 @@
 #include "Tests.h"
-// #include <cassert>
-// #include "../SmartPointer/SmartPointer.h"
-// #include "../Sequences/LinkedList.h"
 
 // Функция теста создания объектов для SmrtPtr
 double testSmrtPtrCreationPerformance(int numTests) {
@@ -17,7 +14,7 @@ double testSmrtPtrCreationPerformance(int numTests) {
 }
 
 // Функция теста создания объектов для std::shared_ptr
-double testSharedPtrCreationPerformance(int numTests) {
+double testStdSharedPtrCreationPerformance(int numTests) {
     auto start = std::chrono::high_resolution_clock::now();
 
     for (int i = 0; i < numTests; ++i) {
@@ -45,7 +42,7 @@ double testSmrtPtrCopyPerformance(int numTests) {
 }
 
 // Функция теста копирования для std::shared_ptr
-double testSharedPtrCopyPerformance(int numTests) {
+double testStdSharedPtrCopyPerformance(int numTests) {
     std::shared_ptr<TestStruct> original = std::make_shared<TestStruct>(0);
 
     auto start = std::chrono::high_resolution_clock::now();
@@ -74,7 +71,7 @@ double testSmrtPtrMovePerformance(int numTests) {
 }
 
 // Функция теста перемещения для std::shared_ptr
-double testSharedPtrMovePerformance(int numTests) {
+double testStdSharedPtrMovePerformance(int numTests) {
     auto start = std::chrono::high_resolution_clock::now();
 
     for (int i = 0; i < numTests; ++i) {
