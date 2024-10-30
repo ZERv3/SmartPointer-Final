@@ -1,5 +1,10 @@
 #pragma once
 
+#include "../Tests/tests.h"
+
+#include <iostream>
+#include <limits>  // Для очистки ввода
+
 void showMenu();
 void testLoadMenu();
 void testLoadShowMenu();
@@ -8,4 +13,4 @@ void testLoadAskEnd();
 void testLoadAskStep();
 
 int getValidatedInput(int min, int max);
-int menu();
+void menu();

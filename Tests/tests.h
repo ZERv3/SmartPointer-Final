@@ -1,9 +1,19 @@
 #pragma once
 
+#include "../SmartPointer/SmartPointer.h"
+
+#include <cassert>
+#include <chrono>
 #include <iostream>
 #include <fstream>
 #include <ostream>
 #include <string>
+
+// Структура для тестов
+struct TestStruct {
+    int value;
+    TestStruct(int v) : value(v) {}
+};
 
 //Нагрузочные тесты
 double testSmrtPtrCreationPerformance(int numTests);

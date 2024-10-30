@@ -1,10 +1,8 @@
-#include <iostream>
-#include <chrono>
-
-#include <cassert>
-#include "test_structure.h"
-#include "../SmartPointer/SmartPointer.h"
-#include "../Sequences/LinkedList.h"
+#include "tests.h"
+// #include <cassert>
+// #include "test_structure.h"
+// #include "../SmartPointer/SmartPointer.h"
+// #include "../Sequences/LinkedList.h"
 
 // Функция теста создания объектов для SmrtPtr
 double testSmrtPtrCreationPerformance(int numTests) {

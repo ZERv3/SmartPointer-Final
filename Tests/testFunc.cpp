@@ -1,6 +1,4 @@
-#include <cassert>
-#include "../SmartPointer/SmartPointer.h"
-
+#include "tests.h"
 
 // Проверка создания и уничтожения указателя
 void testSmrtPtrCreationAndDestruction() {

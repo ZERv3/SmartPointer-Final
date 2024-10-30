@@ -1,8 +1,4 @@
-#include "../Tests/tests.h"
 #include "Interface.h"
-
-#include <iostream>
-#include <limits>  // Для очистки ввода
 
 void showMenu() {
     std::cout << "Выберите команду:\n";
@@ -118,7 +114,5 @@ void menu() {
             break;
         }
     }
-
-    return 0;
 }
 
