@@ -99,7 +99,7 @@ void testLoadMenu() {
     }
 }
 
-int menu() {
+void menu() {
     int choice;
     bool running = true;
 
