@@ -1,6 +1,5 @@
-#include "tests.h"
+#include "Tests.h"
 // #include <cassert>
-// #include "test_structure.h"
 // #include "../SmartPointer/SmartPointer.h"
 // #include "../Sequences/LinkedList.h"
 

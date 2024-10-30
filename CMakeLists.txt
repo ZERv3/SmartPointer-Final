@@ -6,7 +6,6 @@ set(CMAKE_CXX_STANDARD 20)
 add_executable(untitled main.cpp
         Tests/testLoad.cpp
         Tests/tests.h
-        Tests/test_structure.h
         SmartPointer/SmartPointer.h
         Interface/Interface.cpp
         Interface/Interface.h

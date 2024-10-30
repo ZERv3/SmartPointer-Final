@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../Tests/tests.h"
+#include "../Tests/Tests.h"
 
 #include <iostream>
 #include <limits>  // Для очистки ввода

@@ -1,4 +1,4 @@
-#include "tests.h"
+#include "Tests.h"
 
 void testFuncConsoleView() {
     try {
