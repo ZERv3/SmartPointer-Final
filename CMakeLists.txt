@@ -3,12 +3,12 @@ project(SmartPointer)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(SmartPointerExperiment
+add_executable(
+        SmartPointerExperiment
         SmartPointer/SmartPointer.h
         Tests/Tests.h
-        Tests/TestLoad.cpp
-        Tests/TestView.cpp
-        Tests/TestFunc.cpp
+        Tests/Tests.cpp
         Interface/Interface.h
         Interface/Interface.cpp
-        main.cpp)
+        main.cpp
+        )

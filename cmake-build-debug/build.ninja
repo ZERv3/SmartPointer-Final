@@ -49,20 +49,8 @@ cmake_ninja_workdir = /Users/alx/Documents/GitHub/SmartPointer-Final/cmake-build
 
 build cmake_object_order_depends_target_SmartPointerExperiment: phony || .
 
-build CMakeFiles/SmartPointerExperiment.dir/Tests/TestLoad.cpp.o: CXX_COMPILER__SmartPointerExperiment_unscanned_Debug /Users/alx/Documents/GitHub/SmartPointer-Final/Tests/TestLoad.cpp || cmake_object_order_depends_target_SmartPointerExperiment
-  DEP_FILE = CMakeFiles/SmartPointerExperiment.dir/Tests/TestLoad.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/SmartPointerExperiment.dir
-  OBJECT_FILE_DIR = CMakeFiles/SmartPointerExperiment.dir/Tests
-
-build CMakeFiles/SmartPointerExperiment.dir/Tests/TestView.cpp.o: CXX_COMPILER__SmartPointerExperiment_unscanned_Debug /Users/alx/Documents/GitHub/SmartPointer-Final/Tests/TestView.cpp || cmake_object_order_depends_target_SmartPointerExperiment
-  DEP_FILE = CMakeFiles/SmartPointerExperiment.dir/Tests/TestView.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/SmartPointerExperiment.dir
-  OBJECT_FILE_DIR = CMakeFiles/SmartPointerExperiment.dir/Tests
-
-build CMakeFiles/SmartPointerExperiment.dir/Tests/TestFunc.cpp.o: CXX_COMPILER__SmartPointerExperiment_unscanned_Debug /Users/alx/Documents/GitHub/SmartPointer-Final/Tests/TestFunc.cpp || cmake_object_order_depends_target_SmartPointerExperiment
-  DEP_FILE = CMakeFiles/SmartPointerExperiment.dir/Tests/TestFunc.cpp.o.d
+build CMakeFiles/SmartPointerExperiment.dir/Tests/Tests.cpp.o: CXX_COMPILER__SmartPointerExperiment_unscanned_Debug /Users/alx/Documents/GitHub/SmartPointer-Final/Tests/Tests.cpp || cmake_object_order_depends_target_SmartPointerExperiment
+  DEP_FILE = CMakeFiles/SmartPointerExperiment.dir/Tests/Tests.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/SmartPointerExperiment.dir
   OBJECT_FILE_DIR = CMakeFiles/SmartPointerExperiment.dir/Tests
@@ -87,7 +75,7 @@ build CMakeFiles/SmartPointerExperiment.dir/main.cpp.o: CXX_COMPILER__SmartPoint
 #############################################
 # Link the executable SmartPointerExperiment
 
-build SmartPointerExperiment: CXX_EXECUTABLE_LINKER__SmartPointerExperiment_Debug CMakeFiles/SmartPointerExperiment.dir/Tests/TestLoad.cpp.o CMakeFiles/SmartPointerExperiment.dir/Tests/TestView.cpp.o CMakeFiles/SmartPointerExperiment.dir/Tests/TestFunc.cpp.o CMakeFiles/SmartPointerExperiment.dir/Interface/Interface.cpp.o CMakeFiles/SmartPointerExperiment.dir/main.cpp.o
+build SmartPointerExperiment: CXX_EXECUTABLE_LINKER__SmartPointerExperiment_Debug CMakeFiles/SmartPointerExperiment.dir/Tests/Tests.cpp.o CMakeFiles/SmartPointerExperiment.dir/Interface/Interface.cpp.o CMakeFiles/SmartPointerExperiment.dir/main.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk
   OBJECT_DIR = CMakeFiles/SmartPointerExperiment.dir
   POST_BUILD = :
