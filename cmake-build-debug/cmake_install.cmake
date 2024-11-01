@@ -1,4 +1,4 @@
-# Install script for directory: /Users/alx/Documents/GitHub/SmartPointer-Final
+# Install script for directory: /Users/alx/Documents/GitHub/SmartPointer-Final-Recopy
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/alx/Documents/GitHub/SmartPointer-Final/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/alx/Documents/GitHub/SmartPointer-Final-Recopy/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

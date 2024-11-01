@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../Tests/Tests.h"
+#include "../Sequences/LinkedList.h"
 
 #include <iostream>
 #include <limits>  // Для очистки ввода

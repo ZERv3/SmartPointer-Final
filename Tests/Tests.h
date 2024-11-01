@@ -2,11 +2,10 @@
 
 #include "../SmartPointer/SmartPointer.h"
 
-#include <cassert>
-#include <chrono>
-#include <iostream>
-#include <fstream>
-#include <ostream>
+#include <cassert> //asserts
+#include <chrono> //замер времени для тестов
+#include <iostream> //вывод данных в консоль
+#include <fstream> //вывод данных в файл
 #include <string>
 
 // Структура для тестов

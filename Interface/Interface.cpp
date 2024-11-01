@@ -4,7 +4,8 @@ void showMenu() {
     std::cout << "Выберите команду:\n";
     std::cout << "1. Выполнить функциональные тесты\n";
     std::cout << "2. Выполнить нагрузочные тесты\n";
-    std::cout << "3. Завершить программу\n";
+    std::cout << "3. Запустить ручное тестирование\n";
+    std::cout << "4. Завершить программу\n";
     std::cout << "Введите номер команды: ";
 }
 
@@ -25,7 +26,7 @@ void testLoadAskEnd() {
 void testLoadAskStep() {
     std::cout << "\tСколько шагов нужно сделать?: ";
 }
-void testLoadAskOutput() {
+void testLoadAskOutputFileName() {
     std::cout << "\tНапишите название файла: ";
 }
 
@@ -44,6 +45,22 @@ int getValidatedInput(int min, int max) {
             return choice;
         }
     }
+}
+
+bool isValidName(const std::string& name) {
+    if (name.empty()) {
+        return false;
+    }
+    bool hasLetter = false;
+    for (char c : name) {
+        if (!std::isalnum(c)) {
+            return false;
+        }
+        if (std::isalpha(c)) {
+            hasLetter = true;
+        }
+    }
+    return hasLetter;
 }
 
 void testLoadMenu() {
@@ -83,14 +100,76 @@ void testLoadMenu() {
                 testLoadConsoleView(start, end, step);
             }
             else {
-                std::string output;
-                testLoadAskOutput();
-                std::cin >> output;
-                testLoadFileView(start, end, step, output);
+                std::string outputFileName;
+                testLoadAskOutputFileName();
+                std::cin >> outputFileName;
+                while(!isValidName(outputFileName))
+                {
+                    std::cout << "\tНекорректное название для файла\n";
+                    testLoadAskOutputFileName();
+                    std::cin >> outputFileName;
+                }
+                testLoadFileView(start, end, step, outputFileName);
             }
         }
 
     }
+}
+
+void HandsShowMenu(){
+    std::cout << "\n\tРУЧНОЕ ТЕСТИРОВАНИЕ:\n";
+    std::cout << "\t1) Добавить указатель\n";
+    std::cout << "\t2) Убрать указатель\n";
+    std::cout << "\t3) Найти указатель\n";
+    std::cout << "\t4) Вывести список указателей\n";
+    std::cout << "\t5) Выйти из ручного тестирования\n";
+    std::cout << "\tВведите номер команды: ";
+}
+
+void HandsAskValue(){
+    std::cout << "\n\t\tВведите значение указателя: ";
+}
+
+void HandsMenu(){
+    SmartPointer::LinkedList<std::string> LinkedListSmrtPtr;
+
+    int choice;
+    int index;
+    std::string value;
+    bool running = true;
+
+    while(running){
+        HandsShowMenu();
+        choice = getValidatedInput(1, 6);
+
+        switch(choice){
+            case 1:
+                HandsAskValue();
+                std::cin >> value;
+                LinkedListSmrtPtr.push_front(value);
+            break;
+            case 2:
+                LinkedListSmrtPtr.pop_front();
+            break;
+            case 3:
+                HandsAskValue();
+                std::cin >> value;
+                index = LinkedListSmrtPtr.find(value);
+                if(index != -1){
+                    std::cout << "\tУказатель расположен на " << index << " позиции\n";
+                }
+                else std::cout << "\tДанный указатель не был найден в списке\n";
+
+            break;
+            case 4:
+                LinkedListSmrtPtr.print();
+            break;
+            case 5:
+                running = false;
+            break;
+        }
+    }
+
 }
 
 void menu() {
@@ -99,7 +178,7 @@ void menu() {
 
     while (running) {
         showMenu();
-        choice = getValidatedInput(1, 3);  // Ожидаем выбор команды от 1 до 3
+        choice = getValidatedInput(1, 4);  // Ожидаем выбор команды от 1 до 4
 
         switch (choice) {
             case 1:
@@ -109,6 +188,9 @@ void menu() {
                 testLoadMenu();
             break;
             case 3:
+                HandsMenu();
+            break;
+            case 4:
                 std::cout << "Завершение программы...\n";
             running = false;
             break;
